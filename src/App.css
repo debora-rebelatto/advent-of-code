@@ -1,38 +1,245 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  font-size: 4rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  height: 340px;
+  background-image: url(./assets/test.jpg);
+}
+
+.lbladvent {
+  position: absolute;
+  top: 290px;
+  left: 0;
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px;
+}
+
+.App-header {
+  position: relative;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 20px 20px;
+}
+
+.image-logo {
+  width: 140px;
+}
+
+.green-button {
+  background-color: #00ffa1;
+  color: #173873;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.adventofcodeyellow {
+  color: #ffff66;
+  padding: 10px 20px;
+  border: none;
+  font-size: 44px;
+  font-weight: lighter;
+  text-shadow: 0 0 10px #ffff66;
+}
+
+.plusstyling {
+  font-size: 44px;
+}
+
+.zbraplusadvent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+
+#whatis {
+  background-color: #173873;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+#whatis img {
+  width: 40%;
+}
+
+#whatis p {
+  font-size: 18px;
+  font-weight: lighter;
+  color: white;
+  text-align: left;
+}
+
+#whatis .textwhatis {
+  width: 30%;
+  font-size: 18px;
+  padding: 60px;
+}
+
+#howitworks {
+  background-color: aqua;
+}
+
+#howitworks p {
+  color: #173873;
+}
+
+#whyzbrasupports {
+  background-color: #00ffa1;
+}
+
+#whyzbrasupports .whyzbrasupportstext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#whyzbrasupports p {
+  color: #173873;
+}
+
+#joinwithzbra {
+  background-color: #173873;
+  background-image: url(./assets/Zbackground.svg);
+  background-size: cover;
+}
+
+#getready {
+  color: #173873;
+}
+
+#getready h1 {
+  /* align center */
+  color: #173873;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zbra-green {
+  color: #00ffa1 !important;
+}
+
+.whatisadvent {
+  background-color: #00ffa1;
+  color: #173873;
+}
+
+.greenhighlight {
+  background-color: #00ffa1;
+  color: #173873;
+}
+
+.purplehighlight {
+  background-color: #a164ff;
+  color: white;
+  font-weight: bold;
+}
+
+.blue-backgound {
+  background-color: #173873;
+  color: white !important;
+}
+
+
+input[type="text"] {
+  width: 200px;
+  height: 20px;
+  padding-right: 50px;
+  background-color: #a164ff;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+}
+
+input[type="submit"] {
+  margin-left: -80px;
+  height: 25px;
+  width: 80px;
+  background: #a164ff;
+  color: white;
+  border: 0;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  /* height: 40px; */
+}
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+
+.testcars {
+  background-color: red;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .card-columns {
+    column-count: 1;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.img-test {
+  width: 40%;
+  margin-left: 40px;
+}
+
+
+.container{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 20px;
 }
