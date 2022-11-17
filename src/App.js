@@ -1,7 +1,10 @@
+import WebFont from 'webfontloader';
+import { useEffect } from 'react';
 import './App.css';
-import whatisimage from './assets/zcap.png'
 import logoZbra from './assets/ZBRA_Logo.svg';
 import whyzbrasupports from './assets/whyZBRAsupports.png';
+import ZChristmas from './assets/Zchristmas.webp';
+import ZFooterBackground from './assets/ZFooterBackgound.png';
 
 function App() {
   const copytext = () => {
@@ -13,9 +16,16 @@ function App() {
     navigator.clipboard.writeText(copyText.value);
   }
 
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Droid Sans']
+      }
+    });
+  }, []);
+
   return (
     <div>
-
       <header className="App-header">
         <div className="header-menu">
           <div className='img-test'>
@@ -30,71 +40,74 @@ function App() {
           <button className="green-button"> FAÇA PARTE </button>
         </div>
 
-        <div className='zbraplusadvent'>
+        <div className='center-align zbraplusadvent'>
           <img src={logoZbra} className="App-logo" alt="logo" />
           <p className='plusstyling'> + </p>
-          <p className='adventofcodeyellow'>ADVENT OF CODE</p>
+          <p className='adventofcodeyellow'>Advent of Code</p>
         </div>
 
       </header>
 
-        <h2 className='lbladvent greenhighlight'> O QUE É O ADVENT OF CODE? </h2>
 
-        <div id="whatis" className='blue-background '>
-          <img src={whatisimage} className="whatisimage" alt="whatisimage" />
-          <div className='textwhatis'>
-            <p>
-              O advent of code é um calendário de pequenos <a className='purplehighlight'>quebra-cabeças de programação</a> que acontece todo ano antecedendo o Natal.
-              São uma série de desafios para testar uma variedade de conjuntos e níveis de habilidades e que podem ser resolvidos em <a className='purplehighlight'>qualquer linguagem de programação</a> que você quiser.
-            </p>
-            <p>
-              O nome do evento é uma brincadeira com o Calendário do Advento, então um novo puzzle é liberado <a className='purplehighlight'>todos os dias entre 1 e 25 de dezembro.</a>
-            </p>
-            <p>
-              É sempre uma boa oportunidade pra aprender alguma linguagem nova, relembrar alguns conceitos ou simplesmente <a className='purplehighlight'>testar suas habilidades.</a>
-            </p>
-          </div>
+      <div id="whatis" className='blue-background center-align'>
+        <h2 className='lbladvent greenhighlight center-align'> O QUE É O ADVENT OF CODE? </h2>
+        <img src={ZChristmas} className="whatisimage" alt="whatisimage" />
+        <div className='textwhatis '>
+          <p>
+            O advent of code é um calendário de pequenos <a className='purplehighlight'>quebra-cabeças de programação</a> que acontece todo ano antecedendo o Natal.
+          </p>
+          <p>
+            São uma série de desafios para testar uma variedade de conjuntos e níveis de habilidades e que podem ser resolvidos em <a className='purplehighlight'>qualquer linguagem de programação</a> que você quiser.
+          </p>
+          <p>
+            O nome do evento é uma brincadeira com o Calendário do Advento, então um novo puzzle é liberado <a className='purplehighlight'>todos os dias entre 1 e 25 de dezembro.</a>
+          </p>
+          <p>
+            É sempre uma boa oportunidade pra aprender alguma linguagem nova, relembrar alguns conceitos ou simplesmente <a className='purplehighlight'>testar suas habilidades.</a>
+          </p>
         </div>
-
-
+      </div>
 
       <div id="howitworks">
-        <h1 className='blue-backgound'> COMO FUNCIONA? </h1>
-        <p>
-          Acessando o site adventofcode.com você
-          pode <a className='purplehighlight'>se cadastrar para participar</a> e
-          ter acesso ao puzzles do ano.
-        </p>
+        <h2 className='howitworkstitle'> COMO FUNCIONA? </h2>
+        <div className='howitworkstext'>
+          <p>
+            Acessando o site adventofcode.com você pode <a className='purplehighlight'>se cadastrar para participar </a>
+            e ter acesso ao puzzles do ano.
+          </p>
 
-        <p>
-          A partir do dia 1 de dezembro, por volta das 2 da manhã, no horário de Brasília,
-          todos os dias <a className='purplehighlight'>um novo quebra-cabeças é desvendado </a>,
-          em geral contando uma historinha de
-          como o Papai Noel precisa de ajuda para o Natal.
-        </p>
+          <p>
+            A partir do dia 1 de dezembro, por volta das 2 da manhã, no horário de Brasília,
+            todos os dias <a className='purplehighlight'>um novo quebra-cabeças é desvendado </a>,
+            em geral contando uma historinha de como o Papai Noel precisa de ajuda para o Natal.
+          </p>
 
-        <p>
-          Cada desafio do dia consiste em <a className='purplehighlight'>2 partes</a>, sendo
-          que a segunda só é apresentada depois que
-          você consegue terminar a primeira com a resposta correta.
-          O site vai trazer uma descrição do desafio e então te apresentar uma opção para baixar
-          os inputs necessários para a sua solução do problema (cada usuário tem uma sequência de
-          inputs único que vai gerar um resultado único). Ao acertar a primeira, você ganha uma
-          estrela e então a segunda parte é apresentada. Sua posição no ranking depende de
-          <a className='purplehighlight'> quantos desafios e de quanto tempo </a>
-          levou para terminar, desde o anúncio.
-          Mas se não terminar algum desafio, não desanime. Você pode pular para outro dia e voltar
-          para esse desafio em outro momento quando tiver outra ideia.
-        </p>
+          <p>
+            Cada desafio do dia consiste em <a className='purplehighlight'>2 partes</a>, sendo
+            que a segunda só é apresentada depois que você consegue terminar a primeira com a resposta correta.
+          </p>
+          <p>
+            O site vai trazer uma descrição do desafio e então te apresentar uma opção para baixar
+            os inputs necessários para a sua solução do problema (cada usuário tem uma sequência de
+            inputs único que vai gerar um resultado único). Ao acertar a primeira, você ganha uma
+            estrela e então a segunda parte é apresentada. Sua posição no ranking depende de
+            <a className='purplehighlight'> quantos desafios e de quanto tempo </a>
+            levou para terminar, desde o anúncio.
+          </p>
+          <p>
+            Mas se não terminar algum desafio, não desanime. Você pode pular para outro dia e voltar
+            para esse desafio em outro momento quando tiver outra ideia.
+          </p>
+        </div>
       </div>
 
       <div id="whyzbrasupports" className=''>
-        <h1> PORQUE A ZBRA APOIA? </h1>
-
-        <div className='whyzbrasupportstext'>
-          <div>
+        <div className='center-align'>
+          <div className='texttestalign'>
+            <h2> PORQUE A </h2>
+            <h2 className='whyzbrasupportslbl'> ZBRA APOIA? </h2>
             <p>
-              Um dos valores que nos move é “Aprenda e melhore continuamente”.
+              Um dos valores que nos move é <a className='purplehighlight'>“Aprenda e melhore continuamente”.</a>
             </p>
 
             <p>
@@ -115,31 +128,19 @@ function App() {
         </div>
       </div>
 
-
-
-
-      {/* create 3 cards */}
-      <div className='testcars cards card-columns'>
-        <div>
-          <h1> PREPARE-SE </h1>
-        </div>
-        <div>
-          <h1>askldjsad</h1>
-        </div>
-        <div>
-          <h1>askldjsad</h1>
-        </div>
-      </div>
-
-
       <div id="joinwithzbra" className=''>
-        <h1> PARTICIPE COM A ZBRA </h1>
-        <p>
-          Venha participar do leaderboard junto com o pessoal da ZBRA e veja sua posição.
-        </p>
-        <p>
-          Para entrar basta entrar no site do Advent of Code, clicar em Leaderboars, depois em Private Leaderboard e usar o código abaixo:
-        </p>
+        <div>
+          <h2> PARTICIPE  </h2>
+          <h2 className='joinwithzbralbl'> COM A ZBRA </h2>
+        </div>
+        <div>
+          <p>
+            Venha participar do leaderboard junto com o pessoal da ZBRA e veja sua posição.
+          </p>
+          <p>
+            Para entrar basta entrar no site do Advent of Code, clicar em Leaderboars, depois em Private Leaderboard e usar o código abaixo:
+          </p>
+        </div>
 
         <input type="text" id="copyvalue" value={"194976-6dd31c12"} />
         <input type="submit" value="Copiar 🖇️" onClick={copytext}/>
@@ -180,15 +181,16 @@ function App() {
       </div>
 
       <div id="meetzbra" className=''>
+        {/* <img src={ZFooterBackground} className="imgmeetzbra" alt="meetzbra" /> */}
         <h1> CONHEÇA A ZBRA E CANDIDATE-SE </h1>
 
       </div>
 
 
       <footer>
-        <img src={logoZbra} className="App-logo" alt="logo" />
+        <img src={logoZbra} className="logo-footer" alt="logo" />
         <p> DECIFRANDO O PRESENTE PARA CODIFICAR O FUTURO </p>
-        <p> © 2020 ZBRA </p>
+        <p> © ZBRA </p>
       </footer>
 
     </div>

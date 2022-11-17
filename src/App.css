@@ -1,11 +1,13 @@
 
-h1 {
-  font-size: 4rem;
+h2 {
+  font-size: 2rem;
   color: white;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 p {
   color: black;
+  font-family: 'ProximaNova-Regular';
 }
 
 a {
@@ -21,7 +23,14 @@ a:visited {
 
 header {
   height: 340px;
-  background-image: url(./assets/test.jpg);
+  background-image: url(./assets/adventheader.webp);
+}
+
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .lbladvent {
@@ -29,9 +38,6 @@ header {
   top: 290px;
   left: 0;
   width: 50%;
-  display: flex;
-  justify-content: right;
-  align-items: center;
   padding: 10px;
 }
 
@@ -61,6 +67,7 @@ header {
 }
 
 .adventofcodeyellow {
+  font-family: 'Source Code Pro', monospace;
   color: #ffff66;
   padding: 10px 20px;
   border: none;
@@ -74,25 +81,18 @@ header {
 }
 
 .zbraplusadvent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
 }
-
-
 
 #whatis {
   background-color: #173873;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   padding: 30px;
 }
 
 #whatis img {
-  width: 40%;
+  width: 30%;
 }
 
 #whatis p {
@@ -109,21 +109,50 @@ header {
 }
 
 #howitworks {
-  background-color: aqua;
+  color: #173873;
+  align-items: center;
+  justify-content: center;
+  padding: 15vh 20vh;
 }
 
-#howitworks p {
+.howitworkstitle {
+  background-color: #173873;
+  color: white;
+  padding: 10px;
+  display: inline;
+}
+
+.howitworkstext {
+  font-size: 18px;
+  font-weight: lighter;
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+
+.howitworkstext > p {
   color: #173873;
+  padding-top: 10px;
 }
 
 #whyzbrasupports {
   background-color: #00ffa1;
+  padding: 5vh 20vh;
+  align-items: flex-start;
 }
 
-#whyzbrasupports .whyzbrasupportstext {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.whyzbrasupportslbl {
+  position: absolute;
+  left: 0;
+  width: 20%;
+  padding: 10px;
+  background: #173873;
+  text-align: right;
+  color: white !important;
+}
+
+#whyzbrasupports h2 {
+  color: #173873;
 }
 
 #whyzbrasupports p {
@@ -134,6 +163,11 @@ header {
   background-color: #173873;
   background-image: url(./assets/Zbackground.svg);
   background-size: cover;
+  height: 60vh;
+}
+
+#joinwithzbra h2, p{
+  color: white;
 }
 
 #getready {
@@ -141,7 +175,6 @@ header {
 }
 
 #getready h1 {
-  /* align center */
   color: #173873;
   display: flex;
   align-items: center;
@@ -196,6 +229,15 @@ input[type="submit"] {
   /* height: 40px; */
 }
 
+#meetzbra {
+  background-image: url(./assets/ZFooterBackgound.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5vh 20vh;
+  height: 60vh;
+}
+
 div.scrollmenu {
   background-color: #333;
   overflow: auto;
@@ -242,4 +284,37 @@ div.scrollmenu a:hover {
   height: 200px;
   position: relative;
   margin: 20px;
+}
+
+
+footer {
+  background-color: #173873;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px 10px 50px;
+}
+
+footer p {
+  color: white;
+}
+/* footer for mobile screen */
+@media (max-width: 768px) {
+  footer {
+    background-color: #173873;
+    flex-direction: column;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  footer .logo-footer {
+    width: 100px;
+  }
 }
