@@ -16,14 +16,91 @@ a {
   color: white;
 }
 
-a:visited {
-  text-decoration: none;
-  color: white;
+li {
+  list-style: none;
 }
 
 header {
-  height: 340px;
   background-image: url(./assets/adventheader.webp);
+  padding: 1rem;
+  height: 340px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.nav-link:hover{
+  color: #482ff7;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+  /* .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: aqua;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+} */
+
+  /* .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  } */
+
 }
 
 .center-align {
@@ -35,7 +112,7 @@ header {
 
 .lbladvent {
   position: absolute;
-  top: 290px;
+  top: 320px;
   left: 0;
   width: 50%;
   padding: 10px;
@@ -161,9 +238,10 @@ header {
 
 #joinwithzbra {
   background-color: #173873;
-  background-image: url(./assets/Zbackground.svg);
+  /* background-image: url(./assets/Zbackground.svg); */
   background-size: cover;
   height: 60vh;
+  /* width: 100%; */
 }
 
 #joinwithzbra h2, p{
@@ -180,6 +258,8 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+#getready
 
 .zbra-green {
   color: #00ffa1 !important;
@@ -224,7 +304,7 @@ input[type="submit"] {
   background: #a164ff;
   color: white;
   border: 0;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   border-radius: 5px;
   /* height: 40px; */
 }
