@@ -2,8 +2,8 @@ import WebFont from 'webfontloader';
 import { useEffect } from 'react';
 import './App.css';
 import logoZbra from './assets/ZBRA_Logo.svg';
-import whyzbrasupports from './assets/whyZBRAsupports.png';
-import ZChristmas from './assets/Zchristmas.webp';
+import womanzbra from './assets/womanzbra.png';
+import advent from './assets/advent.webp';
 import lock from './assets/icons/lock.svg';
 import iconfacebook from './assets/icons/Icone-Facebook.svg';
 import iconinstagram from './assets/icons/Icone-Instagram.svg';
@@ -89,7 +89,7 @@ function App() {
 
       <div id="whatis" className='blue-background center-align'>
         <h2 className='lbladvent greenhighlight center-align'> O QUE É O ADVENT OF CODE? </h2>
-        <img src={ZChristmas} className="whatisimage" alt="whatisimage" />
+        <img src={advent} className="whatisimage" alt="whatisimage" />
         <div className='textwhatis '>
           <p>
             O advent of code é um calendário de pequenos <span>quebra-cabeças de programação</span> que acontece todo ano antecedendo o Natal.
@@ -161,7 +161,7 @@ function App() {
           </div>
         </div>
         <div className='adventcontent'>
-          <img src={whyzbrasupports} className="whyzbrasupports" alt="whyzbrasupports" />
+          <img src={womanzbra} className="whyzbrasupports" alt="whyzbrasupports" />
         </div>
       </div>
 
