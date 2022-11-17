@@ -35,7 +35,7 @@ li > p {
 }
 
 header {
-  background-image: url(./assets/adventheader.webp);
+  background-image: url(./assets/header.webp);
   padding: 1rem;
   height: 340px;
   background-size: cover;
@@ -390,7 +390,7 @@ input[type="submit"] {
 }
 
 #meetzbra {
-  background-image: url(./assets/ZFooterBackgound.png);
+  background-image: url(./assets/footer.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

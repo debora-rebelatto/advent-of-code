@@ -4,13 +4,13 @@ import './App.css';
 import logoZbra from './assets/ZBRA_Logo.svg';
 import whyzbrasupports from './assets/whyZBRAsupports.png';
 import ZChristmas from './assets/Zchristmas.webp';
-import lock from './assets/lock.svg';
-import iconfacebook from './assets/Icone-Facebook.svg';
-import iconinstagram from './assets/Icone-Instagram.svg';
-import iconlinkedin from './assets/Icone-Linkedin.svg';
-import icontiktok from './assets/Icone-Tiktok.svg';
-import icontwitter from './assets/Icone-Twitter.svg';
-import iconyoutube from './assets/Icone-Youtube.svg';
+import lock from './assets/icons/lock.svg';
+import iconfacebook from './assets/icons/Icone-Facebook.svg';
+import iconinstagram from './assets/icons/Icone-Instagram.svg';
+import iconlinkedin from './assets/icons/Icone-Linkedin.svg';
+import icontiktok from './assets/icons/Icone-Tiktok.svg';
+import icontwitter from './assets/icons/Icone-Twitter.svg';
+import iconyoutube from './assets/icons/Icone-Youtube.svg';
 
 
 function App() {
