@@ -214,9 +214,9 @@ function App() {
       <div id="getready" className=''>
         <h2> PREPARE-SE </h2>
         <h2> <span>COM ANTECEDÊNCIA</span> </h2>
-        <h2 className='center-align'>
+        <h3 className='center-align'>
           Uma coisa importante para começar a participação no Advent of Code é a preparação.
-        </h2>
+        </h3>
 
         <div className='center-align'>
           <div className='card'>

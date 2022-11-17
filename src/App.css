@@ -291,7 +291,6 @@ nav {
 #joinwithzbra h2 > span, #meetzbra h2 > span {
   background-color: #00ffa1;
   color: #173873;
-  /* padding: 10px; */
   text-align: right;
   display: block;
   left: 0;
@@ -320,7 +319,6 @@ nav {
 
 
 input[type="text"] {
-  /* height: 20px; */
   height: 40px;
   width: 350px;
   background-color: #a164ff;
@@ -340,7 +338,6 @@ input[type="submit"] {
   color: white;
   border: 0;
   border-radius: 5px;
-  /* height: 40px; */
 }
 
 #getready {
@@ -354,18 +351,11 @@ input[type="submit"] {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 44px;
 }
 
-#getready h2 {
-  color: #173873;
-}
-
-#getready h1 > span {
-  font-size: 44px;
-  font-weight: lighter;
-  color: white;
+#getready h2 > span {
   background-color: #173873;
+  color: white;
   padding: 10px;
 }
 
@@ -404,7 +394,6 @@ input[type="submit"] {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* padding: 5vh 20vh; */
   height: 60vh;
 }
 
@@ -462,7 +451,7 @@ footer {
 footer p {
   color: white;
 }
-/* footer for mobile screen */
+
 @media (max-width: 768px) {
   footer {
     background-color: #173873;
