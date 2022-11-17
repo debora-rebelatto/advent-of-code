@@ -23,6 +23,11 @@ a {
 
 li {
   list-style: none;
+  padding: 10px;
+}
+
+li a:hover {
+  color: #00ffa1 !important;
 }
 
 header {
@@ -265,7 +270,7 @@ nav {
   align-items: center;
 }
 
-#joinwithzbra .joincontent, #meetzbra .joincontent, #whyzbrasupports .joincontent {
+.adventcontent {
   width: 50%;
   color: white;
   font-size: 22px;
@@ -292,6 +297,10 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.socialmedia a {
+  padding: 10px;
 }
 
 .socialmediacard {
@@ -367,10 +376,6 @@ input[type="submit"] {
 
 .card p {
   color: white;
-}
-
-.zbra-green {
-  color: #00ffa1 !important;
 }
 
 .whatisadvent {

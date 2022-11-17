@@ -5,7 +5,13 @@ import logoZbra from './assets/ZBRA_Logo.svg';
 import whyzbrasupports from './assets/whyZBRAsupports.png';
 import ZChristmas from './assets/Zchristmas.webp';
 import lock from './assets/lock.svg';
-import duplicate from './assets/duplicate.svg';
+import iconfacebook from './assets/Icone-Facebook.svg';
+import iconinstagram from './assets/Icone-Instagram.svg';
+import iconlinkedin from './assets/Icone-Linkedin.svg';
+import icontiktok from './assets/Icone-Tiktok.svg';
+import icontwitter from './assets/Icone-Twitter.svg';
+import iconyoutube from './assets/Icone-Youtube.svg';
+
 
 function App() {
   const copytext = () => {
@@ -41,20 +47,24 @@ function App() {
           <img src={logoZbra} className="image-logo" alt="logo" />
           <ul className="nav-menu">
             <li className="nav-item">
-              <a href="#whatis" className='zbra-green'> O que é? </a>
+              <a href="#whatis"> O que é? </a>
             </li>
             <li className="nav-item">
               <a href="#howitworks"> Como funciona? </a>
+            </li>
+            <li>
+              <a href="#whyzbrasupports"> Porque a ZBRA apoia? </a>
+            </li>
+            <li>
+              <a href="#joinwithzbra"> Participe com a ZBRA </a>
             </li>
             <li className="nav-item">
               <a href="#getready"> Prepare-se </a>
             </li>
             <li className="nav-item">
-              <a href="#whatis"> AoC na ZBRA </a>
+              <a href="#meetzbra"> Conheça a ZBRA</a>
             </li>
-            <li className="nav-item">
-              <a href="#whatis"> Conheça a ZBRA</a>
-            </li>
+
             <li className="nav-item">
               <a href="#meetzbra" className="green-button"> FAÇA PARTE </a>
             </li>
@@ -122,8 +132,8 @@ function App() {
         </div>
       </div>
 
-      <div id="whyzbrasupports" className=''>
-        <div className='joincontent'>
+      <div id="whyzbrasupports">
+        <div className='adventcontent'>
           <div className='whyzbrasupportstitle'>
             <h2> PORQUE A </h2>
             <h2 className='whyzbrasupportslbl'> ZBRA APOIA? </h2>
@@ -147,17 +157,17 @@ function App() {
             </p>
           </div>
         </div>
-        <div className='joincontent'>
+        <div className='adventcontent'>
           <img src={whyzbrasupports} className="whyzbrasupports" alt="whyzbrasupports" />
         </div>
       </div>
 
       <div id="joinwithzbra" className=''>
-        <div class="joincontent">
+        <div class="adventcontent">
           <h2> PARTICIPE </h2>
           <h2 className='joinwithzbralbl'><span>COM A ZBRA</span></h2>
         </div>
-        <div class="joincontent">
+        <div class="adventcontent">
           <p>
             Venha participar do leaderboard junto com o pessoal da ZBRA e veja sua posição.
           </p>
@@ -173,10 +183,24 @@ function App() {
           </p>
 
           <div className='socialmedia'>
-            <div className='socialmediacard'></div>
-            <div className='socialmediacard'></div>
-            <div className='socialmediacard'></div>
-            <div className='socialmediacard'></div>
+            <a href='linkedin.com'>
+              <img src={iconlinkedin} alt="Linkedin"/>
+            </a>
+            <a href='instagram.com'>
+              <img src={iconinstagram} alt="Instagram"/>
+            </a>
+            <a href='twitter.com'>
+              <img src={icontwitter} alt="Twitter"/>
+            </a>
+            <a href='facebook.com'>
+              <img src={iconfacebook} alt="Facebook"/>
+            </a>
+            <a href='youtube.com'>
+              <img src={iconyoutube} alt="Youtube"/>
+            </a>
+            <a href='tiktok.com'>
+              <img src={icontiktok} alt="TikTok"/>
+            </a>
           </div>
         </div>
 
@@ -219,11 +243,11 @@ function App() {
       </div>
 
       <div id="meetzbra" className=''>
-        <div className='joincontent'>
+        <div className='adventcontent'>
           <h2> CONHEÇA A ZBRA </h2>
           <h2> <span>E CANDIDATE-SE</span> </h2>
         </div>
-        <div className='joincontent'>
+        <div className='adventcontent'>
           <p>
             A ZBRA é uma empresa de desenvolvimento feita de dev para dev. Aqui nos preocupamos não só com a qualidade do seu código, mas também com a sua qualidade de vida.
           </p>
@@ -237,8 +261,27 @@ function App() {
 
       <footer>
         <img src={logoZbra} className="logo-footer" alt="logo" />
-        <p> DECIFRANDO O PRESENTE PARA CODIFICAR O FUTURO </p>
-        <p> © ZBRA </p>
+        <p> DECIFRANDO O PRESENTE PARA CODIFICAR O FUTURO © ZBRA </p>
+        <div className='socialmedia'>
+          <a href='linkedin.com'>
+            <img src={iconlinkedin} alt="Linkedin"/>
+          </a>
+          <a href='instagram.com'>
+            <img src={iconinstagram} alt="Instagram"/>
+          </a>
+          <a href='twitter.com'>
+            <img src={icontwitter} alt="Twitter"/>
+          </a>
+          <a href='facebook.com'>
+            <img src={iconfacebook} alt="Facebook"/>
+          </a>
+          <a href='youtube.com'>
+            <img src={iconyoutube} alt="Youtube"/>
+          </a>
+          <a href='tiktok.com'>
+            <img src={icontiktok} alt="TikTok"/>
+          </a>
+        </div>
       </footer>
 
     </div>
