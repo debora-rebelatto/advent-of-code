@@ -30,6 +30,10 @@ li a:hover {
   color: #00ffa1 !important;
 }
 
+li > p {
+  color: white;
+}
+
 header {
   background-image: url(./assets/adventheader.webp);
   padding: 1rem;
@@ -64,10 +68,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav-item {
-  margin-left: 5rem;
 }
 
 .nav-link{
@@ -221,14 +221,16 @@ nav {
   padding-top: 10px;
 }
 
-#whyzbrasupports {
-  background-color: #00ffa1;
-  /* padding: 5vh 20vh; */
-  /* align-items: flex-start; */
+.partofcontent {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+
+#whyzbrasupports {
+  background-color: #00ffa1;
 }
 
 .whyzbrasupportstitle{
@@ -249,6 +251,13 @@ nav {
   color: white !important;
 }
 
+.joinwithzbralbl {
+  padding: 10px;
+  background: #00ffa1;
+  text-align: right;
+  color: #173873 !important;
+}
+
 #whyzbrasupports h2 {
   color: #173873;
 }
@@ -259,15 +268,12 @@ nav {
 
 #joinwithzbra {
   background-color: #173873;
+  height: 40rem;
+}
+
+.joinwithzbrabackground {
   background-image: url(./assets/Zbackground.svg);
   background-size: cover;
-  height: 60vh;
-  padding: 50px;
-  /* separate in columns */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .adventcontent {
@@ -285,7 +291,7 @@ nav {
 #joinwithzbra h2 > span, #meetzbra h2 > span {
   background-color: #00ffa1;
   color: #173873;
-  padding: 10px;
+  /* padding: 10px; */
   text-align: right;
   display: block;
   left: 0;
@@ -370,7 +376,7 @@ input[type="submit"] {
   padding: 30px;
   margin: 20px;
   width: 40vh;
-  height: 60vh;
+  height: 30rem;
   font-size: 20px;
 }
 
@@ -398,12 +404,8 @@ input[type="submit"] {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 5vh 20vh;
+  /* padding: 5vh 20vh; */
   height: 60vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #meetzbra p {

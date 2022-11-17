@@ -61,6 +61,9 @@ function App() {
             <li className="nav-item">
               <a href="#getready"> Prepare-se </a>
             </li>
+            <li>
+              <p> | </p>
+            </li>
             <li className="nav-item">
               <a href="#meetzbra"> Conheça a ZBRA</a>
             </li>
@@ -132,7 +135,7 @@ function App() {
         </div>
       </div>
 
-      <div id="whyzbrasupports">
+      <div id="whyzbrasupports" className='partofcontent'>
         <div className='adventcontent'>
           <div className='whyzbrasupportstitle'>
             <h2> PORQUE A </h2>
@@ -162,10 +165,12 @@ function App() {
         </div>
       </div>
 
-      <div id="joinwithzbra" className=''>
+      <div id="joinwithzbra" className='partofcontent joinwithzbrabackground'>
         <div class="adventcontent">
-          <h2> PARTICIPE </h2>
-          <h2 className='joinwithzbralbl'><span>COM A ZBRA</span></h2>
+          <div className='whyzbrasupportstitle'>
+            <h2> PARTICIPE </h2>
+            <h2 className='joinwithzbralbl'>COM A ZBRA</h2>
+          </div>
         </div>
         <div class="adventcontent">
           <p>
@@ -242,10 +247,12 @@ function App() {
 
       </div>
 
-      <div id="meetzbra" className=''>
+      <div id="meetzbra" className='partofcontent'>
         <div className='adventcontent'>
-          <h2> CONHEÇA A ZBRA </h2>
-          <h2> <span>E CANDIDATE-SE</span> </h2>
+          <div className='whyzbrasupportstitle'>
+            <h2> CONHEÇA A ZBRA </h2>
+            <h2 className='joinwithzbralbl'>E CANDIDATE-SE </h2>
+          </div>
         </div>
         <div className='adventcontent'>
           <p>
