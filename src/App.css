@@ -257,9 +257,27 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* padding: 10px; */
+  font-size: 44px;
 }
 
-#getready
+#getready h1 > span {
+  font-size: 44px;
+  font-weight: lighter;
+  color: white;
+  background-color: #173873;
+  padding: 10px;
+}
+
+#getready .card {
+  /* top border */
+  border-top: 5px solid #00ffa1;
+  background-color: #173873;
+  color: white;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
 
 .zbra-green {
   color: #00ffa1 !important;
@@ -334,17 +352,6 @@ div.scrollmenu a {
 
 div.scrollmenu a:hover {
   background-color: #777;
-}
-
-
-.testcars {
-  background-color: red;
-}
-
-.cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media (max-width: 768px) {
