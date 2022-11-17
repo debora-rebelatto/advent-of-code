@@ -1,4 +1,3 @@
-
 h2 {
   font-size: 2rem;
   color: white;
@@ -219,7 +218,7 @@ nav {
 
 #whyzbrasupports {
   background-color: #00ffa1;
-  padding: 5vh 20vh;
+  /* padding: 5vh 20vh; */
   /* align-items: flex-start; */
   display: flex;
   flex-direction: row;
@@ -227,10 +226,18 @@ nav {
   align-items: center;
 }
 
-.whyzbrasupportslbl {
-  position: absolute;
+.whyzbrasupportstitle{
+  display: block;
   left: 0;
-  width: 20%;
+  text-align: end;
+  width: 60%;
+}
+
+.whyzbrasupportstxt {
+  padding: 1vh 8vh;
+}
+
+.whyzbrasupportslbl {
   padding: 10px;
   background: #173873;
   text-align: right;
@@ -270,18 +277,15 @@ nav {
   color: white;
 }
 
-#joinwithzbra h2 {
-
-}
-
 #joinwithzbra h2 > span, #meetzbra h2 > span {
   background-color: #00ffa1;
   color: #173873;
   padding: 10px;
-  position: absolute;
-  left: 0;
-  width: 30%;
   text-align: right;
+  display: block;
+  left: 0;
+  text-align: end;
+  width: 60%;
 }
 
 .socialmedia{
@@ -359,6 +363,10 @@ input[type="submit"] {
   width: 40vh;
   height: 60vh;
   font-size: 20px;
+}
+
+.card p {
+  color: white;
 }
 
 .zbra-green {
@@ -465,4 +473,13 @@ footer p {
   footer .logo-footer {
     width: 100px;
   }
+}
+
+.zbrabtn, .zbrabtn a {
+  background-color: #00ffa1;
+  color: #173873;
+  border: 0;
+  font-size: 20px;
+  padding: 20px;
+  margin: 10px;
 }

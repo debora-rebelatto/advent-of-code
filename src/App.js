@@ -47,7 +47,7 @@ function App() {
               <a href="#howitworks"> Como funciona? </a>
             </li>
             <li className="nav-item">
-              <a href="#joinwithzbra"> Prepare-se </a>
+              <a href="#getready"> Prepare-se </a>
             </li>
             <li className="nav-item">
               <a href="#whatis"> AoC na ZBRA </a>
@@ -124,24 +124,28 @@ function App() {
 
       <div id="whyzbrasupports" className=''>
         <div className='joincontent'>
-          <h2> PORQUE A </h2>
-          <h2 className='whyzbrasupportslbl'> ZBRA APOIA? </h2>
-          <p>
-            Um dos valores que nos move é <span>“Aprenda e melhore continuamente”.</span>
-          </p>
+          <div className='whyzbrasupportstitle'>
+            <h2> PORQUE A </h2>
+            <h2 className='whyzbrasupportslbl'> ZBRA APOIA? </h2>
+          </div>
+          <div className='whyzbrasupportstxt'>
+            <p>
+              Um dos valores que nos move é <span>“Aprenda e melhore continuamente”.</span>
+            </p>
 
-          <p>
-            Para a ZBRA, o Advent of Code é uma excelente oportunidade para
-            cada pessoa poder <span>aprender e se desafiar</span>
-            cada vez mais. E como gostamos de um ambiente bem descontraído e animado,
-            vemos como uma excelente oportunidade para fazer
-            isso ainda de um jeito divertido. 😝
-          </p>
-          <p>
-            A ZBRA <span>investe muito no treinamento das pessoas</span> e em seu desenvolvimento,
-            e acreditamos que essa é uma oportunidade para estimularmos a melhora das habilidades
-            das pessoas junto das outras iniciativas que temos internamente.
-          </p>
+            <p>
+              Para a ZBRA, o Advent of Code é uma excelente oportunidade para
+              cada pessoa poder <span>aprender e se desafiar</span>
+              cada vez mais. E como gostamos de um ambiente bem descontraído e animado,
+              vemos como uma excelente oportunidade para fazer
+              isso ainda de um jeito divertido. 😝
+            </p>
+            <p>
+              A ZBRA <span>investe muito no treinamento das pessoas</span> e em seu desenvolvimento,
+              e acreditamos que essa é uma oportunidade para estimularmos a melhora das habilidades
+              das pessoas junto das outras iniciativas que temos internamente.
+            </p>
+          </div>
         </div>
         <div className='joincontent'>
           <img src={whyzbrasupports} className="whyzbrasupports" alt="whyzbrasupports" />
@@ -150,7 +154,7 @@ function App() {
 
       <div id="joinwithzbra" className=''>
         <div class="joincontent">
-          <h2> PARTICIPE  </h2>
+          <h2> PARTICIPE </h2>
           <h2 className='joinwithzbralbl'><span>COM A ZBRA</span></h2>
         </div>
         <div class="joincontent">
@@ -218,7 +222,6 @@ function App() {
         <div className='joincontent'>
           <h2> CONHEÇA A ZBRA </h2>
           <h2> <span>E CANDIDATE-SE</span> </h2>
-
         </div>
         <div className='joincontent'>
           <p>
@@ -227,7 +230,7 @@ function App() {
           <p>
             Acesse o site, conheça nossas vagas e candidate-se. <b>Venha fazer parte deste time!</b>
           </p>
-          <button className='btn'> <a href="https://zbra.dev"> ACESSE O SITE {"=>"} </a> </button>
+          <button className='zbrabtn'> <a href="https://zbra.dev"> ACESSE O SITE ⟶ </a> </button>
         </div>
       </div>
 
