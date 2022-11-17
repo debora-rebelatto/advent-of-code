@@ -10,6 +10,12 @@ p {
   font-family: 'ProximaNova-Regular';
 }
 
+p > span {
+  background-color: #a164ff;
+  color: white;
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
@@ -164,7 +170,6 @@ nav {
 #whatis {
   background-color: #173873;
   color: white;
-
   padding: 30px;
 }
 
@@ -215,7 +220,11 @@ nav {
 #whyzbrasupports {
   background-color: #00ffa1;
   padding: 5vh 20vh;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .whyzbrasupportslbl {
@@ -238,14 +247,81 @@ nav {
 
 #joinwithzbra {
   background-color: #173873;
-  /* background-image: url(./assets/Zbackground.svg); */
+  background-image: url(./assets/Zbackground.svg);
   background-size: cover;
   height: 60vh;
-  /* width: 100%; */
+  padding: 50px;
+  /* separate in columns */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#joinwithzbra h2, p{
+#joinwithzbra .joincontent, #meetzbra .joincontent, #whyzbrasupports .joincontent {
+  width: 50%;
   color: white;
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+#joinwithzbra p {
+  color: white;
+}
+
+#joinwithzbra h2 {
+
+}
+
+#joinwithzbra h2 > span, #meetzbra h2 > span {
+  background-color: #00ffa1;
+  color: #173873;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  width: 30%;
+  text-align: right;
+}
+
+.socialmedia{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.socialmediacard {
+  background-color: #00ffa1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+
+input[type="text"] {
+  /* height: 20px; */
+  height: 40px;
+  width: 350px;
+  background-color: #a164ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  margin-left: -150px;
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+  background: #a164ff;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  /* height: 40px; */
 }
 
 #getready {
@@ -253,12 +329,12 @@ nav {
   padding: 5vh 10vh;
 }
 
-#getready h1 {
+#getready h2 {
   color: #173873;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 10px; */
+  text-align: center;
   font-size: 44px;
 }
 
@@ -299,38 +375,9 @@ nav {
   color: #173873;
 }
 
-.purplehighlight {
-  background-color: #a164ff;
-  color: white;
-  font-weight: bold;
-}
-
 .blue-backgound {
   background-color: #173873;
   color: white !important;
-}
-
-
-input[type="text"] {
-  width: 200px;
-  height: 20px;
-  padding-right: 50px;
-  background-color: #a164ff;
-  border: none;
-  border-radius: 5px;
-  height: 40px;
-}
-
-input[type="submit"] {
-  margin-left: -80px;
-  height: 25px;
-  width: 80px;
-  background: #a164ff;
-  color: white;
-  border: 0;
-  /* -webkit-appearance: none; */
-  border-radius: 5px;
-  /* height: 40px; */
 }
 
 #meetzbra {
@@ -340,6 +387,14 @@ input[type="submit"] {
   background-position: center;
   padding: 5vh 20vh;
   height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#meetzbra p {
+  color: white;
 }
 
 div.scrollmenu {
