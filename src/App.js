@@ -177,40 +177,48 @@ function App() {
       <div id="getready" className=''>
         <h1> PREPARE-SE </h1>
         <h1> <span>COM ANTECEDÊNCIA</span> </h1>
-        <p>
+        <h2 className='center-align'>
           Uma coisa importante para começar a participação no Advent of Code é a preparação.
-        </p>
+        </h2>
 
-        <div className='card'>
-          <img src={lock} className="lock" alt="lock" />
-          <h3>Decida a linguagem e estratégia</h3>
-          <p>
-            Pense com antecedência que linguagem você quer usar para resolver os desafios. Vai aprender uma linguagem nova? Vai se aprimorar em uma linguagem que já vem trabalhando? Vai querer tentar uma técnica ou framework novo? Pensar essas coisas com antecedência te dão uma tranquilidade para fazer um desafio por dia
-          </p>
+        <div className='center-align'>
+          <div className='card'>
+            <img src={lock} className="lock" alt="lock" />
+            <h3>Decida a linguagem e estratégia</h3>
+            <p>
+              Pense com antecedência que linguagem você quer usar para resolver os desafios. Vai aprender uma linguagem nova? Vai se aprimorar em uma linguagem que já vem trabalhando? Vai querer tentar uma técnica ou framework novo? Pensar essas coisas com antecedência te dão uma tranquilidade para fazer um desafio por dia
+            </p>
+          </div>
+
+          <div className='card'>
+            <img src={lock} className="lock" alt="lock" />
+            <h3>Prepare o ambiente</h3>
+            <p>
+              Escolha suas ferramentas. Pensar se vai usar uma IDE diferente ou extensões novas também é importante. Especialmente se você for trabalhar com uma linguagem que não é sua usual, ter o ambiente preparado com antecedência salva muito tempo. Ah, e talvez você já queira preparar bibliotecas para leitura e escrita de arquivos que podem ser bastante úteis 😉
+            </p>
+          </div>
+
+          <div className='card'>
+            <img src={lock} className="lock" alt="lock" />
+            <h3>Prepare seu arsenal</h3>
+            <p>
+              Especialmente se tiver fazendo com uma linguagem que não tem tanta familiaridade, prepare seu arsenal de recursos. Seja Stackoverflow, Google ou outra fonte, esteja preparado para conseguir as informações rapidamente e se divertir no processo.
+            </p>
+          </div>
         </div>
 
-        <div className='card'>
-          <img src={lock} className="lock" alt="lock" />
-          <h3>Prepare o ambiente</h3>
-          <p>
-            Escolha suas ferramentas. Pensar se vai usar uma IDE diferente ou extensões novas também é importante. Especialmente se você for trabalhar com uma linguagem que não é sua usual, ter o ambiente preparado com antecedência salva muito tempo. Ah, e talvez você já queira preparar bibliotecas para leitura e escrita de arquivos que podem ser bastante úteis 😉
-          </p>
-        </div>
-
-        <div className='card'>
-          <img src={lock} className="lock" alt="lock" />
-          <h3>Prepare seu arsenal</h3>
-          <p>
-            Especialmente se tiver fazendo com uma linguagem que não tem tanta familiaridade, prepare seu arsenal de recursos. Seja Stackoverflow, Google ou outra fonte, esteja preparado para conseguir as informações rapidamente e se divertir no processo.
-          </p>
-        </div>
 
       </div>
 
       <div id="meetzbra" className=''>
-        {/* <img src={ZFooterBackground} className="imgmeetzbra" alt="meetzbra" /> */}
         <h1> CONHEÇA A ZBRA E CANDIDATE-SE </h1>
-
+        <p>
+          A ZBRA é uma empresa de desenvolvimento feita de dev para dev. Aqui nos preocupamos não só com a qualidade do seu código, mas também com a sua qualidade de vida.
+        </p>
+        <p>
+          Acesse o site, conheça nossas vagas e candidate-se. <b>Venha fazer parte deste time!</b>
+        </p>
+        <button className='btn'> <a href="https://zbra.dev"> ACESSE O SITE {"=>"} </a> </button>
       </div>
 
 
