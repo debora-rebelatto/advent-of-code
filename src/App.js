@@ -1,5 +1,3 @@
-import WebFont from 'webfontloader';
-import { useEffect } from 'react';
 import './App.css';
 import logoZbra from './assets/ZBRA_Logo.svg';
 import womanzbra from './assets/womanzbra.png';
@@ -11,7 +9,9 @@ import iconlinkedin from './assets/icons/Icone-Linkedin.svg';
 import icontiktok from './assets/icons/Icone-Tiktok.svg';
 import icontwitter from './assets/icons/Icone-Twitter.svg';
 import iconyoutube from './assets/icons/Icone-Youtube.svg';
-
+import card1 from './assets/card1.svg';
+import card2 from './assets/card2.svg';
+import card3 from './assets/card3.svg';
 
 function App() {
   const copytext = () => {
@@ -30,15 +30,6 @@ function App() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
   }
-
-
-  useEffect(() => {
-    WebFont.load({
-      google: {
-        families: ['Droid Sans']
-      }
-    });
-  }, []);
 
   return (
     <div>
@@ -192,22 +183,22 @@ function App() {
           </p>
 
           <div className='socialmedia'>
-            <a href='linkedin.com'>
+            <a href='https://br.linkedin.com/company/zbra-dev'>
               <img src={iconlinkedin} alt="Linkedin"/>
             </a>
-            <a href='instagram.com'>
+            <a href='https://www.instagram.com/zbra.dev/'>
               <img src={iconinstagram} alt="Instagram"/>
             </a>
-            <a href='twitter.com'>
+            <a href='https://twitter.com/zbra_dev'>
               <img src={icontwitter} alt="Twitter"/>
             </a>
-            <a href='facebook.com'>
+            <a href='https://pt-br.facebook.com/zbra.solucoes/'>
               <img src={iconfacebook} alt="Facebook"/>
             </a>
-            <a href='youtube.com'>
+            <a href='https://youtube.com'>
               <img src={iconyoutube} alt="Youtube"/>
             </a>
-            <a href='tiktok.com'>
+            <a href='https://tiktok.com'>
               <img src={icontiktok} alt="TikTok"/>
             </a>
           </div>
@@ -224,7 +215,7 @@ function App() {
 
         <div className='card-content'>
           <div className='card'>
-            <img src={lock} className="lock" alt="lock" />
+            <img src={card1} alt="arrow" />
             <h3>Decida a linguagem e estratégia</h3>
             <p>
               Pense com antecedência que linguagem você quer usar para resolver os desafios. Vai aprender uma linguagem nova? Vai se aprimorar em uma linguagem que já vem trabalhando? Vai querer tentar uma técnica ou framework novo? Pensar essas coisas com antecedência te dão uma tranquilidade para fazer um desafio por dia
@@ -232,7 +223,7 @@ function App() {
           </div>
 
           <div className='card'>
-            <img src={lock} className="lock" alt="lock" />
+            <img src={card2} alt="computer" />
             <h3>Prepare o ambiente</h3>
             <p>
               Escolha suas ferramentas. Pensar se vai usar uma IDE diferente ou extensões novas também é importante. Especialmente se você for trabalhar com uma linguagem que não é sua usual, ter o ambiente preparado com antecedência salva muito tempo. Ah, e talvez você já queira preparar bibliotecas para leitura e escrita de arquivos que podem ser bastante úteis 😉
@@ -240,7 +231,7 @@ function App() {
           </div>
 
           <div className='card'>
-            <img src={lock} className="lock" alt="lock" />
+            <img src={card3} alt="box of tools" />
             <h3>Prepare seu arsenal</h3>
             <p>
               Especialmente se tiver fazendo com uma linguagem que não tem tanta familiaridade, prepare seu arsenal de recursos. Seja Stackoverflow, Google ou outra fonte, esteja preparado para conseguir as informações rapidamente e se divertir no processo.
@@ -271,22 +262,22 @@ function App() {
         <img src={logoZbra} alt="logo zbra" />
         <p> DECIFRANDO O PRESENTE PARA CODIFICAR O FUTURO © ZBRA </p>
         <div className='socialmedia'>
-          <a href='linkedin.com'>
+          <a href='https://br.linkedin.com/company/zbra-dev'>
             <img src={iconlinkedin} alt="Linkedin"/>
           </a>
-          <a href='instagram.com'>
+          <a href='https://www.instagram.com/zbra.dev/'>
             <img src={iconinstagram} alt="Instagram"/>
           </a>
-          <a href='twitter.com'>
+          <a href='https://twitter.com/zbra_dev'>
             <img src={icontwitter} alt="Twitter"/>
           </a>
-          <a href='facebook.com'>
+          <a href='https://pt-br.facebook.com/zbra.solucoes/'>
             <img src={iconfacebook} alt="Facebook"/>
           </a>
-          <a href='youtube.com'>
+          <a href='https://youtube.com'>
             <img src={iconyoutube} alt="Youtube"/>
           </a>
-          <a href='tiktok.com'>
+          <a href='https://tiktok.com'>
             <img src={icontiktok} alt="TikTok"/>
           </a>
         </div>
