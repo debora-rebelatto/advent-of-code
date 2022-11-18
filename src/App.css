@@ -23,6 +23,40 @@ a {
   color: white;
 }
 
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* CONTENT MEIO GERALZÃO CRIA UMA COLUNA 50% DA TELA */
+.adventcontent {
+  width: 50%;
+  color: white;
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.socialmedia{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.socialmedia a {
+  padding: 10px;
+}
+
+/* HEADER DA PÁGINA E MENU */
 li {
   list-style: none;
   padding: 10px;
@@ -52,83 +86,10 @@ nav {
   padding: 1rem 1.5rem;
 }
 
-.hamburger {
-  display: none;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
-
 .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav-link{
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-.nav-link:hover{
-  color: #482ff7;
-}
-
-.nav-logo {
-  font-size: 2.1rem;
-  font-weight: 500;
-  color: #482ff7;
-}
-
-@media only screen and (max-width: 768px) {
-  /* .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: aqua;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-} */
-
-  /* .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 2.5rem 0;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  } */
-
-}
-
-.center-align {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.lbladvent {
-  position: absolute;
-  top: 320px;
-  left: 0;
-  width: 50%;
-  padding: 10px;
-  text-align: right;
 }
 
 .header-menu {
@@ -151,7 +112,9 @@ nav {
   font-size: 16px;
   font-weight: lighter;
 }
+/* FIM */
 
+/* LOGO + ADVENT */
 .adventofcode {
   font-family: 'Source Code Pro', monospace;
   color: #ffff66 !important;
@@ -163,30 +126,46 @@ nav {
   font-size: 44px;
   color: white;
 }
+/* FIM */
 
-#whatis {
+/* O QUE É O ADVENT OF CODE */
+.header-what-is-advent {
+  position: absolute;
+  top: 320px;
+  left: 0;
+  width: 50%;
+  padding: 10px;
+  text-align: right;
+  background-color: #00ffa1;
+  color: #173873;
+}
+
+#what-is-advent {
   background-color: #173873;
   color: white;
   padding: 30px;
 }
 
-#whatis img {
+#what-is-advent img {
   width: 30%;
 }
 
-#whatis p {
+#what-is-advent p {
   font-size: 18px;
   font-weight: lighter;
   color: white;
   text-align: left;
 }
 
-#whatis .textwhatis {
+#what-is-advent .textwhatis {
   width: 30%;
   font-size: 18px;
   padding: 60px;
 }
 
+/* FIM */
+
+/* COMO FUNCIONA */
 #howitworks {
   color: #173873;
   align-items: center;
@@ -213,15 +192,9 @@ nav {
   color: #173873;
   padding-top: 10px;
 }
+/* FIM */
 
-.column {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
+/* PORQUE A ZBRA APOIA */
 #whyzbrasupports {
   background-color: #00ffa1;
 }
@@ -244,19 +217,21 @@ nav {
   color: white !important;
 }
 
-.joinwithzbralbl {
-  padding: 10px;
-  background: #00ffa1;
-  text-align: right;
-  color: #173873 !important;
-}
-
 #whyzbrasupports h2 {
   color: #173873;
 }
 
 #whyzbrasupports p {
   color: #173873;
+}
+/* FIM */
+
+/* PARTICIPE COM A ZBRA */
+.joinwithzbralbl {
+  padding: 10px;
+  background: #00ffa1;
+  text-align: right;
+  color: #173873 !important;
 }
 
 #joinwithzbra {
@@ -269,13 +244,6 @@ nav {
   background-size: cover;
 }
 
-.adventcontent {
-  width: 50%;
-  color: white;
-  font-size: 22px;
-  font-weight: lighter;
-  text-align: left;
-}
 
 #joinwithzbra p {
   color: white;
@@ -290,26 +258,6 @@ nav {
   text-align: end;
   width: 60%;
 }
-
-.socialmedia{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.socialmedia a {
-  padding: 10px;
-}
-
-.socialmediacard {
-  background-color: #00ffa1;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  width: 20px;
-  height: 20px;
-}
-
 
 input[type="text"] {
   height: 40px;
@@ -333,6 +281,9 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
+/* FIM */
+
+/* PREPARE-SE */
 #getready {
   color: #173873;
   padding: 5vh 10vh;
@@ -366,22 +317,9 @@ input[type="submit"] {
 .card p {
   color: white;
 }
+/* FIM */
 
-.whatisadvent {
-  background-color: #00ffa1;
-  color: #173873;
-}
-
-.greenhighlight {
-  background-color: #00ffa1;
-  color: #173873;
-}
-
-.blue-backgound {
-  background-color: #173873;
-  color: white !important;
-}
-
+/* CONHEÇA A ZBRA */
 #meetzbra {
   background-image: url(./assets/footer.png);
   background-size: cover;
@@ -394,44 +332,17 @@ input[type="submit"] {
   color: white;
 }
 
-div.scrollmenu {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
+.zbrabtn, .zbrabtn a {
+  background-color: #00ffa1;
+  color: #173873;
+  border: 0;
+  font-size: 20px;
+  padding: 20px;
+  margin: 10px;
 }
+/* FIM */
 
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-  background-color: #777;
-}
-
-@media (max-width: 768px) {
-  .card-columns {
-    column-count: 1;
-  }
-}
-
-.img-test {
-  width: 40%;
-  margin-left: 40px;
-}
-
-
-.container{
-  width: 200px;
-  height: 200px;
-  position: relative;
-  margin: 20px;
-}
-
-
+/* Footer */
 footer {
   background-color: #173873;
   color: white;
@@ -464,11 +375,4 @@ footer p {
   }
 }
 
-.zbrabtn, .zbrabtn a {
-  background-color: #00ffa1;
-  color: #173873;
-  border: 0;
-  font-size: 20px;
-  padding: 20px;
-  margin: 10px;
-}
+/* FIM */

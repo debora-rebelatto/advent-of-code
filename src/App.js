@@ -87,8 +87,8 @@ function App() {
         </div>
       </header>
 
-      <div id="whatis" className='center-align blue-background'>
-        <h2 className='lbladvent greenhighlight'> O QUE É  <strong>O ADVENT OF CODE?</strong></h2>
+      <div id="what-is-advent" className='center-align blue-background'>
+        <h2 className='header-what-is-advent'> O QUE É  <strong>O ADVENT OF CODE?</strong></h2>
         <img src={advent} className="whatisimage" alt="whatisimage" />
         <div className='textwhatis '>
           <p>
