@@ -73,22 +73,22 @@ function App() {
             </li>
 
           </ul>
-          <div className="hamburger" onClick={openMenu}>
+          {/* <div className="hamburger" onClick={openMenu}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
-          </div>
+          </div> */}
         </nav>
 
         <div className='center-align zbraplusadvent'>
           <img src={logoZbra} alt="logo" />
-          <p className='plusstyling'> + </p>
-          <p className='adventofcodeyellow'>Advent of Code</p>
+          <p> + </p>
+          <p className='adventofcode'>Advent of Code</p>
         </div>
       </header>
 
-      <div id="whatis" className='blue-background center-align'>
-        <h2 className='lbladvent greenhighlight center-align'> O QUE É O ADVENT OF CODE? </h2>
+      <div id="whatis" className='center-align blue-background'>
+        <h2 className='lbladvent greenhighlight'> O QUE É  <strong>O ADVENT OF CODE?</strong></h2>
         <img src={advent} className="whatisimage" alt="whatisimage" />
         <div className='textwhatis '>
           <p>
@@ -107,10 +107,10 @@ function App() {
       </div>
 
       <div id="howitworks">
-        <h2 className='howitworkstitle'> COMO FUNCIONA? </h2>
+        <h2 className='howitworkstitle'>COMO <strong>FUNCIONA?</strong></h2>
         <div className='howitworkstext'>
           <p>
-            Acessando o site adventofcode.com você pode <span>se cadastrar para participar</span> e ter acesso ao puzzles do ano.
+            Acessando o site <strong>adventofcode.com</strong> você pode <span>se cadastrar para participar</span> e ter acesso ao puzzles do ano.
           </p>
           <p>
             A partir do dia 1 de dezembro, por volta das 2 da manhã, no horário de Brasília,
@@ -135,15 +135,17 @@ function App() {
         </div>
       </div>
 
-      <div id="whyzbrasupports" className='partofcontent'>
+      <div id="whyzbrasupports" className='column'>
         <div className='adventcontent'>
           <div className='whyzbrasupportstitle'>
             <h2> PORQUE A </h2>
-            <h2 className='whyzbrasupportslbl'> ZBRA APOIA? </h2>
+            <h2 className='whyzbrasupportslbl'>
+              <strong>ZBRA APOIA?</strong>
+            </h2>
           </div>
           <div className='whyzbrasupportstxt'>
             <p>
-              Um dos valores que nos move é <span>“Aprenda e melhore continuamente”.</span>
+              <strong>Um dos valores que nos move é </strong> <span>“Aprenda e melhore continuamente”.</span>
             </p>
 
             <p>
@@ -161,11 +163,11 @@ function App() {
           </div>
         </div>
         <div className='adventcontent'>
-          <img src={womanzbra} className="whyzbrasupports" alt="whyzbrasupports" />
+          <img src={womanzbra} alt="" />
         </div>
       </div>
 
-      <div id="joinwithzbra" className='partofcontent joinwithzbrabackground'>
+      <div id="joinwithzbra" className='column joinwithzbrabackground'>
         <div class="adventcontent">
           <div className='whyzbrasupportstitle'>
             <h2> PARTICIPE </h2>
@@ -247,7 +249,7 @@ function App() {
 
       </div>
 
-      <div id="meetzbra" className='partofcontent'>
+      <div id="meetzbra" className='column'>
         <div className='adventcontent'>
           <div className='whyzbrasupportstitle'>
             <h2> CONHEÇA A ZBRA </h2>

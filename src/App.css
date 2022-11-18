@@ -1,18 +1,20 @@
 h2 {
   font-size: 2rem;
-  color: white;
-  font-family: 'Droid Sans', sans-serif;
+  color: #ffffff;
+  font-weight: 100;
+  font-family: 'Roboto Mono', monospace;
 }
 
 p {
-  color: black;
-  font-family: 'ProximaNova-Regular';
+  color: #173873;
+  font-family: 'proxima-nova';
 }
 
 p > span {
   background-color: #a164ff;
   color: white;
   font-weight: bold;
+  padding: 0.2rem;
 }
 
 a {
@@ -126,10 +128,7 @@ nav {
   left: 0;
   width: 50%;
   padding: 10px;
-}
-
-.App-header {
-  position: relative;
+  text-align: right;
 }
 
 .header-menu {
@@ -153,21 +152,15 @@ nav {
   font-weight: lighter;
 }
 
-.adventofcodeyellow {
+.adventofcode {
   font-family: 'Source Code Pro', monospace;
-  color: #ffff66;
+  color: #ffff66 !important;
   padding: 10px 20px;
-  border: none;
-  font-size: 44px;
-  font-weight: lighter;
   text-shadow: 0 0 10px #ffff66;
 }
 
-.plusstyling {
+.zbraplusadvent p {
   font-size: 44px;
-}
-
-.zbraplusadvent {
   color: white;
 }
 
@@ -221,7 +214,7 @@ nav {
   padding-top: 10px;
 }
 
-.partofcontent {
+.column {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
