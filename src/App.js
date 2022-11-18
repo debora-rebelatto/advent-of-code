@@ -44,7 +44,7 @@ function App() {
     <div>
       <header>
         <nav>
-          <img src={logoZbra} className="image-logo" alt="logo" />
+          <img src={logoZbra} alt="logo zbra" />
           <ul className="nav-menu">
             <li className="nav-item">
               <a href="#whatis"> O que é? </a>
@@ -74,23 +74,25 @@ function App() {
 
           </ul>
           {/* <div className="hamburger" onClick={openMenu}>
-            <span className="bar"></span>
+            <span className="bar">adsad</span>
             <span className="bar"></span>
             <span className="bar"></span>
           </div> */}
         </nav>
 
         <div className='center-align zbraplusadvent'>
-          <img src={logoZbra} alt="logo" />
+          <img src={logoZbra} alt="logo zbra" />
           <p> + </p>
           <p className='adventofcode'>Advent of Code</p>
         </div>
       </header>
 
-      <div id="what-is-advent" className='center-align blue-background'>
-        <h2 className='header-what-is-advent'> O QUE É  <strong>O ADVENT OF CODE?</strong></h2>
-        <img src={advent} className="whatisimage" alt="whatisimage" />
-        <div className='textwhatis '>
+      <div id="what-is-advent" className='page-section center-align'>
+        <h2 className='header-what-is-advent header-section highlight-green'> O QUE É <strong>O ADVENT OF CODE?</strong></h2>
+        <div className="advent-content">
+          <img src={advent} alt="logo zbra com chapéu do papai noel" />
+        </div>
+        <div className='advent-content'>
           <p>
             O advent of code é um calendário de pequenos <span>quebra-cabeças de programação</span> que acontece todo ano antecedendo o Natal.
           </p>
@@ -106,9 +108,9 @@ function App() {
         </div>
       </div>
 
-      <div id="howitworks">
+      <div id="how-it-works">
         <h2 className='howitworkstitle'>COMO <strong>FUNCIONA?</strong></h2>
-        <div className='howitworkstext'>
+        <div className='how-it-works-content'>
           <p>
             Acessando o site <strong>adventofcode.com</strong> você pode <span>se cadastrar para participar</span> e ter acesso ao puzzles do ano.
           </p>
@@ -135,15 +137,15 @@ function App() {
         </div>
       </div>
 
-      <div id="whyzbrasupports" className='column'>
-        <div className='adventcontent'>
+      <div id="whyzbrasupports" className='page-section'>
+        <div className='advent-content'>
           <div className='header-section'>
             <h2> PORQUE A </h2>
             <h2 className='highlight-blue'>
               <strong>ZBRA APOIA?</strong>
             </h2>
           </div>
-          <div className='whyzbrasupportstxt'>
+          <div className='support-content'>
             <p>
               <strong>Um dos valores que nos move é </strong> <span>“Aprenda e melhore continuamente”.</span>
             </p>
@@ -167,14 +169,14 @@ function App() {
         </div>
       </div>
 
-      <div id="joinwithzbra" className='column zbra-background'>
-        <div class="adventcontent">
+      <div id="joinwithzbra" className='page-section'>
+        <div class="advent-content">
           <div className='header-section'>
             <h2> PARTICIPE </h2>
             <h2 className='highlight-green'><strong>COM A ZBRA</strong></h2>
           </div>
         </div>
-        <div class="adventcontent">
+        <div class="advent-content">
           <p>
             Venha participar do leaderboard junto com o pessoal da ZBRA e veja sua posição.
           </p>
@@ -220,7 +222,7 @@ function App() {
           Uma coisa importante para começar a participação no Advent of Code é a preparação.
         </h3>
 
-        <div className='center-align'>
+        <div className='card-content'>
           <div className='card'>
             <img src={lock} className="lock" alt="lock" />
             <h3>Decida a linguagem e estratégia</h3>
@@ -245,18 +247,16 @@ function App() {
             </p>
           </div>
         </div>
-
-
       </div>
 
-      <div id="meetzbra" className='column'>
-        <div className='adventcontent'>
+      <div id="meetzbra" className='page-section'>
+        <div className='advent-content'>
           <div className='header-section'>
             <h2> CONHEÇA A ZBRA </h2>
             <h2 className='highlight-green'><strong>E CANDIDATE-SE</strong> </h2>
           </div>
         </div>
-        <div className='adventcontent'>
+        <div className='advent-content'>
           <p>
             A ZBRA é uma empresa de desenvolvimento feita de dev para dev. Aqui nos preocupamos não só com a qualidade do seu código, mas também com a sua qualidade de vida.
           </p>
@@ -267,9 +267,8 @@ function App() {
         </div>
       </div>
 
-
-      <footer>
-        <img src={logoZbra} className="logo-footer" alt="logo" />
+      <footer className='page-section'>
+        <img src={logoZbra} alt="logo zbra" />
         <p> DECIFRANDO O PRESENTE PARA CODIFICAR O FUTURO © ZBRA </p>
         <div className='socialmedia'>
           <a href='linkedin.com'>

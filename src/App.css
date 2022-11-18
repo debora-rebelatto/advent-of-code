@@ -1,8 +1,9 @@
 h2 {
   font-size: 2rem;
-  color: #ffffff;
+  color: #173873;
   font-weight: 100;
   font-family: 'Roboto Mono', monospace;
+  padding-right: 20px;
 }
 
 p {
@@ -23,11 +24,31 @@ a {
   color: white;
 }
 
-.column {
+.page-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+}
+
+.advent-content {
+  font-size: 20px;
+  width: 50%;
+  padding-right: 60px;
+}
+
+/* media query advent-content */
+@media (max-width: 768px) {
+  .advent-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .center-align {
@@ -38,14 +59,6 @@ a {
 }
 
 /* CONTENT MEIO GERALZÃO CRIA UMA COLUNA 50% DA TELA */
-.adventcontent {
-  width: 50%;
-  color: white;
-  font-size: 22px;
-  font-weight: lighter;
-  text-align: left;
-}
-
 .socialmedia{
   display: flex;
   flex-direction: row;
@@ -58,6 +71,7 @@ a {
 
 /* HEADER DA PÁGINA E MENU */
 li {
+  font-family: 'Roboto Mono', monospace;
   list-style: none;
   padding: 10px;
 }
@@ -80,10 +94,14 @@ header {
 }
 
 nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+}
+
+nav img {
+  width: 160px;
 }
 
 .nav-menu {
@@ -98,10 +116,6 @@ nav {
   justify-content: space-between;
   color: white;
   padding: 20px 20px;
-}
-
-.image-logo {
-  width: 140px;
 }
 
 .green-button {
@@ -129,25 +143,14 @@ nav {
 /* FIM */
 
 /* O QUE É O ADVENT OF CODE */
-.header-what-is-advent {
-  position: absolute;
-  top: 320px;
-  left: 0;
-  width: 50%;
-  padding: 10px;
-  text-align: right;
-  background-color: #00ffa1;
-  color: #173873;
-}
-
 #what-is-advent {
   background-color: #173873;
-  color: white;
   padding: 30px;
 }
 
 #what-is-advent img {
-  width: 30%;
+  width: 40vh;
+  float: right;
 }
 
 #what-is-advent p {
@@ -157,84 +160,91 @@ nav {
   text-align: left;
 }
 
-#what-is-advent .textwhatis {
-  width: 30%;
-  font-size: 18px;
-  padding: 60px;
+/* media query mobile */
+@media (max-width: 768px) {
+  #what-is-advent img {
+    width: 100%;
+    padding-top: 120px !important;
+    padding-bottom: 20px;
+  }
 }
 
 /* FIM */
 
 /* COMO FUNCIONA */
-#howitworks {
+#how-it-works {
   color: #173873;
   align-items: center;
   justify-content: center;
-  padding: 15vh 20vh;
+  padding: 100px;
 }
 
-.howitworkstitle {
+/* media query how it works */
+@media (max-width: 768px) {
+  #how-it-works {
+    padding: 50px;
+  }
+}
+
+#how-it-works > h2 {
   background-color: #173873;
   color: white;
   padding: 10px;
   display: inline;
 }
 
-.howitworkstext {
-  font-size: 18px;
-  font-weight: lighter;
-  color: white;
-  text-align: left;
-  padding: 10px;
-}
-
-.howitworkstext > p {
-  color: #173873;
-  padding-top: 10px;
+.how-it-works-content {
+  padding-top: 20px;
 }
 /* FIM */
 
 /* PORQUE A ZBRA APOIA */
 #whyzbrasupports {
+  padding: 30px 30px 30px 0px;
   background-color: #00ffa1;
 }
-
-.whyzbrasupportstxt {
-  padding: 1vh 8vh;
-}
-
-
 
 #whyzbrasupports h2 {
   color: #173873;
 }
 
-#whyzbrasupports p {
-  color: #173873;
+#whyzbrasupports img {
+  width: 100%;
 }
+
+.support-content {
+  padding: 2rem 10rem;
+}
+
+/* media query mobile support-content */
+@media (max-width: 768px) {
+  #whyzbrasupports {
+    padding: 30px 0;
+  }
+
+  .support-content {
+    padding: 2rem
+  }
+}
+
 /* FIM */
 
 /* PARTICIPE COM A ZBRA */
 
-
 #joinwithzbra {
   background-color: #173873;
-  height: 40rem;
-}
-
-.zbra-background {
   background-image: url(./assets/ZBRABackgound.svg);
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
 }
-
 
 #joinwithzbra p {
   color: white;
 }
 
-
-
-input[type="text"] {
+#joinwithzbra input[type="text"] {
   height: 40px;
   width: 350px;
   background-color: #a164ff;
@@ -245,7 +255,7 @@ input[type="text"] {
   font-size: 20px;
 }
 
-input[type="submit"] {
+#joinwithzbra input[type="submit"] {
   margin-left: -150px;
   height: 40px;
   width: 150px;
@@ -261,7 +271,7 @@ input[type="submit"] {
 /* PREPARE-SE */
 #getready {
   color: #173873;
-  padding: 5vh 10vh;
+  padding: 10vh 10vh;
 }
 
 #getready h2 {
@@ -284,9 +294,32 @@ input[type="submit"] {
   color: white;
   padding: 30px;
   margin: 20px;
-  width: 40vh;
-  height: 30rem;
+  width: 50vh;
+  height: 50vh;
   font-size: 20px;
+  text-align: left;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* media query card */
+@media (max-width: 1080px) {
+  #getready {
+    padding: 6vh 5vh;
+  }
+
+  #getready .card {
+    width: 100%;
+    height: 100%;
+  }
+  .card-content {
+    flex-direction: column;
+  }
 }
 
 .card p {
@@ -301,6 +334,7 @@ input[type="submit"] {
   background-repeat: no-repeat;
   background-position: center;
   height: 60vh;
+  padding: 5vh 5vh 5vh 0;
 }
 
 #meetzbra p {
@@ -352,11 +386,34 @@ footer p {
 
 /* FIM */
 
+/* headers */
+#joinwithzbra h2, #meetzbra h2{
+  color: white;
+}
+
+.header-what-is-advent {
+  position: absolute;
+  top: 320px;
+  width: 50% !important;
+}
+
 .header-section {
   display: block;
   left: 0;
   text-align: end;
   width: 60%;
+  padding-right: 10px;
+}
+
+/* media query mobille .header-section */
+@media (max-width: 768px) {
+  .header-section {
+    display: block;
+    left: 0;
+    text-align: end;
+    width: 100%;
+    padding-right: 10px;
+  }
 }
 
 .highlight-green {
@@ -371,4 +428,9 @@ footer p {
   background: #173873;
   text-align: right;
   color: white !important;
+}
+
+/* FIM */
+.hamburger {
+
 }
