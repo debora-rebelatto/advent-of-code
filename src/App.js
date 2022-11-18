@@ -137,9 +137,9 @@ function App() {
 
       <div id="whyzbrasupports" className='column'>
         <div className='adventcontent'>
-          <div className='whyzbrasupportstitle'>
+          <div className='header-section'>
             <h2> PORQUE A </h2>
-            <h2 className='whyzbrasupportslbl'>
+            <h2 className='highlight-blue'>
               <strong>ZBRA APOIA?</strong>
             </h2>
           </div>
@@ -167,11 +167,11 @@ function App() {
         </div>
       </div>
 
-      <div id="joinwithzbra" className='column joinwithzbrabackground'>
+      <div id="joinwithzbra" className='column zbra-background'>
         <div class="adventcontent">
-          <div className='whyzbrasupportstitle'>
+          <div className='header-section'>
             <h2> PARTICIPE </h2>
-            <h2 className='joinwithzbralbl'>COM A ZBRA</h2>
+            <h2 className='highlight-green'><strong>COM A ZBRA</strong></h2>
           </div>
         </div>
         <div class="adventcontent">
@@ -215,7 +215,7 @@ function App() {
 
       <div id="getready" className=''>
         <h2> PREPARE-SE </h2>
-        <h2> <span>COM ANTECEDÊNCIA</span> </h2>
+        <h2><span><strong>COM ANTECEDÊNCIA</strong></span></h2>
         <h3 className='center-align'>
           Uma coisa importante para começar a participação no Advent of Code é a preparação.
         </h3>
@@ -251,9 +251,9 @@ function App() {
 
       <div id="meetzbra" className='column'>
         <div className='adventcontent'>
-          <div className='whyzbrasupportstitle'>
+          <div className='header-section'>
             <h2> CONHEÇA A ZBRA </h2>
-            <h2 className='joinwithzbralbl'>E CANDIDATE-SE </h2>
+            <h2 className='highlight-green'><strong>E CANDIDATE-SE</strong> </h2>
           </div>
         </div>
         <div className='adventcontent'>

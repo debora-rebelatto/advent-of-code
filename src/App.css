@@ -199,23 +199,11 @@ nav {
   background-color: #00ffa1;
 }
 
-.whyzbrasupportstitle{
-  display: block;
-  left: 0;
-  text-align: end;
-  width: 60%;
-}
-
 .whyzbrasupportstxt {
   padding: 1vh 8vh;
 }
 
-.whyzbrasupportslbl {
-  padding: 10px;
-  background: #173873;
-  text-align: right;
-  color: white !important;
-}
+
 
 #whyzbrasupports h2 {
   color: #173873;
@@ -227,19 +215,14 @@ nav {
 /* FIM */
 
 /* PARTICIPE COM A ZBRA */
-.joinwithzbralbl {
-  padding: 10px;
-  background: #00ffa1;
-  text-align: right;
-  color: #173873 !important;
-}
+
 
 #joinwithzbra {
   background-color: #173873;
   height: 40rem;
 }
 
-.joinwithzbrabackground {
+.zbra-background {
   background-image: url(./assets/ZBRABackgound.svg);
   background-size: cover;
 }
@@ -249,15 +232,7 @@ nav {
   color: white;
 }
 
-#joinwithzbra h2 > span, #meetzbra h2 > span {
-  background-color: #00ffa1;
-  color: #173873;
-  text-align: right;
-  display: block;
-  left: 0;
-  text-align: end;
-  width: 60%;
-}
+
 
 input[type="text"] {
   height: 40px;
@@ -376,3 +351,24 @@ footer p {
 }
 
 /* FIM */
+
+.header-section {
+  display: block;
+  left: 0;
+  text-align: end;
+  width: 60%;
+}
+
+.highlight-green {
+  padding: 10px;
+  background: #00ffa1;
+  text-align: right;
+  color: #173873 !important;
+}
+
+.highlight-blue {
+  padding: 10px;
+  background: #173873;
+  text-align: right;
+  color: white !important;
+}
