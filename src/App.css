@@ -93,7 +93,7 @@ a:hover {
   display: flex;
 }
 
-@media(max-width: 1024px){
+@media(max-width: 1260px){
   .hamburger{
     display: block;
   }
@@ -364,7 +364,7 @@ a:hover {
 #joinwithzbra input[type="submit"] {
   margin-left: -150px;
   height: 40px;
-  width: 150px;
+  width: 100px;
   font-size: 20px;
   background: #a164ff;
   color: white;
@@ -398,7 +398,7 @@ a:hover {
   padding: 30px;
   margin: 20px;
   width: 50vh;
-  height: 40vh;
+  height: 30rem;
   font-size: 20px;
   text-align: left;
 }
