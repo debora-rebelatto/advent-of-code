@@ -234,9 +234,23 @@ nav img {
   text-shadow: 0 0 10px #ffff66;
 }
 
+.zbraplusadvent {
+  display: flex;
+  flex-direction: row;
+  height: 280px;
+}
+
+/* mobile query */
+@media (max-width: 768px) {
+  .zbraplusadvent {
+    flex-direction: column;
+  }
+}
+
 .zbraplusadvent p {
   font-size: 44px;
   color: white;
+  margin: 0;
 }
 /* FIM */
 
@@ -475,7 +489,7 @@ footer p {
   footer {
     background-color: #173873;
     flex-direction: column;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;

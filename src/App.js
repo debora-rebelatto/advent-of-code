@@ -27,10 +27,10 @@ function App() {
   return (
     <div className="App">
       <header>
-        <div class="container">
-          <nav class="navbar">
+        <div className="container">
+          <nav className="navbar">
             <img src={logoZbra} alt="logo zbra" />
-            <ul class="web-menu">
+            <ul className="web-menu">
 
               <li>
                 <a href="#what-is-advent">O que é?</a>
@@ -55,10 +55,10 @@ function App() {
               </li>
             </ul>
 
-            <div class="nav-menu">
+            <div className="nav-menu">
               <div className='header-mobile-menu'>
                 <img src={logoZbra} alt="logo zbra" />
-                <div class="close" onClick={handleClick}>
+                <div className="close" onClick={handleClick}>
                   <img src={closeicon} alt="close icon" className='close-icon' />
                 </div>
               </div>
@@ -85,16 +85,23 @@ function App() {
                   <a href="#meetzbra" className="green-button"> FAÇA PARTE </a>
                 </li>
               </ul>
-              <div class="social-media social-media-menu">
+              <div className="social-media social-media-menu">
                 <SocialMedia />
               </div>
             </div>
-            <div class="hamburger" onClick={handleClick}>
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+            <div className="hamburger" onClick={handleClick}>
+              <span className="bar"></span>
+              <span className="bar"></span>
+              <span className="bar"></span>
             </div>
           </nav>
+        </div>
+
+        
+        <div className='center-align zbraplusadvent'>
+          <img src={logoZbra} alt="logo zbra" />
+          <p> + </p>
+          <p className='adventofcode'>Advent of Code</p>
         </div>
       </header>
 
@@ -181,13 +188,13 @@ function App() {
         </div>
 
         <div id="joinwithzbra" className='page-section'>
-          <div class="advent-content">
+          <div className="advent-content">
             <div className='header-section'>
               <h2> PARTICIPE </h2>
               <h2 className='highlight-green'><strong>COM A ZBRA</strong></h2>
             </div>
           </div>
-          <div class="advent-content joinwithzbra-content">
+          <div className="advent-content joinwithzbra-content">
             <p>
               Venha participar do leaderboard junto com o pessoal da ZBRA e veja sua posição.
             </p>
@@ -259,7 +266,7 @@ function App() {
           </div>
         </div>
 
-        <footer className='page-section center-align'>
+        <footer className='page-section'>
           <img src={logoZbra} alt="logo zbra" />
           <p> DECIFRANDO O PRESENTE PARA CODIFICAR O FUTURO © ZBRA </p>
           <SocialMedia />
