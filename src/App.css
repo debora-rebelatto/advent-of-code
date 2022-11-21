@@ -28,10 +28,6 @@ a:hover {
   color: #00ffa1;
 }
 
-li {
-  list-style: none;
-}
-
 .nav-menu {
   display: none;
 }
@@ -141,7 +137,6 @@ li {
   padding-right: 60px;
 }
 
-/* media query advent-content */
 @media (max-width: 768px) {
   .advent-content {
     width: 100%;
@@ -176,8 +171,6 @@ li {
   padding: 10px;
 }
 
-
-/* HEADER DA PÁGINA E MENU */
 li {
   font-family: 'Roboto Mono', monospace;
   list-style: none;
@@ -233,9 +226,7 @@ nav img {
   background-color: #00ffa1;
   color: #173873;
 }
-/* FIM */
 
-/* LOGO + ADVENT */
 .adventofcode {
   font-family: 'Source Code Pro', monospace;
   color: #ffff66 !important;
@@ -249,7 +240,6 @@ nav img {
   height: 280px;
 }
 
-/* mobile query */
 @media (max-width: 768px) {
   .zbraplusadvent {
     flex-direction: column;
@@ -261,9 +251,7 @@ nav img {
   color: white;
   margin: 0;
 }
-/* FIM */
 
-/* O QUE É O ADVENT OF CODE */
 #what-is-advent {
   background-color: #173873;
   padding: 30px;
@@ -281,7 +269,6 @@ nav img {
   text-align: left;
 }
 
-/* media query mobile */
 @media (max-width: 768px) {
   #what-is-advent img {
     width: 100%;
@@ -290,9 +277,6 @@ nav img {
   }
 }
 
-/* FIM */
-
-/* COMO FUNCIONA */
 #how-it-works {
   color: #173873;
   align-items: center;
@@ -300,7 +284,6 @@ nav img {
   padding: 100px;
 }
 
-/* media query how it works */
 @media (max-width: 768px) {
   #how-it-works {
     padding: 50px;
@@ -317,9 +300,7 @@ nav img {
 .how-it-works-content {
   padding-top: 20px;
 }
-/* FIM */
 
-/* PORQUE A ZBRA APOIA */
 #whyzbrasupports {
   padding: 30px 30px 30px 0px;
   background-color: #00ffa1;
@@ -337,7 +318,6 @@ nav img {
   padding: 0rem 2rem 0rem 10rem;
 }
 
-/* media query mobile support-content */
 @media (max-width: 768px) {
   #whyzbrasupports {
     padding: 30px 0;
@@ -348,9 +328,6 @@ nav img {
   }
 }
 
-/* FIM */
-
-/* PARTICIPE COM A ZBRA */
 #joinwithzbra {
   background-color: #173873;
   background-image: url(./assets/ZBRABackgound.svg);
@@ -391,9 +368,6 @@ nav img {
   border-radius: 5px;
 }
 
-/* FIM */
-
-/* PREPARE-SE */
 #getready {
   color: #173873;
   padding: 10vh 10vh;
@@ -432,7 +406,6 @@ nav img {
   text-align: center;
 }
 
-/* media query card */
 @media (max-width: 1080px) {
   #getready {
     padding: 6vh 5vh;
@@ -450,9 +423,7 @@ nav img {
 .card p {
   color: white;
 }
-/* FIM */
 
-/* CONHEÇA A ZBRA */
 #meetzbra {
   background-image: url(./assets/footer.png);
   background-size: cover;
@@ -478,9 +449,7 @@ nav img {
 .meet-zebra-content {
   padding-left: 60px;
 }
-/* FIM */
 
-/* Footer */
 footer {
   background-color: #173873;
   color: white;
@@ -513,9 +482,6 @@ footer p {
   }
 }
 
-/* FIM */
-
-/* headers */
 #joinwithzbra h2, #meetzbra h2{
   color: white;
 }
@@ -534,7 +500,6 @@ footer p {
   padding-right: 10px;
 }
 
-/* media query mobille .header-section */
 @media (max-width: 768px) {
   .header-section {
     display: block;
@@ -558,5 +523,3 @@ footer p {
   text-align: right;
   color: white !important;
 }
-
-/* FIM */
