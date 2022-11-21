@@ -1,11 +1,11 @@
-import './App.css';
+import '../App.css';
 
-import iconfacebook from './assets/icons/Icone-Facebook.svg';
-import iconinstagram from './assets/icons/Icone-Instagram.svg';
-import iconlinkedin from './assets/icons/Icone-Linkedin.svg';
-import icontiktok from './assets/icons/Icone-Tiktok.svg';
-import icontwitter from './assets/icons/Icone-Twitter.svg';
-import iconyoutube from './assets/icons/Icone-Youtube.svg';
+import iconfacebook from '../assets/icons/Icone-Facebook.svg';
+import iconinstagram from '../assets/icons/Icone-Instagram.svg';
+import iconlinkedin from '../assets/icons/Icone-Linkedin.svg';
+import icontiktok from '../assets/icons/Icone-Tiktok.svg';
+import icontwitter from '../assets/icons/Icone-Twitter.svg';
+import iconyoutube from '../assets/icons/Icone-Youtube.svg';
 
 const SocialMedia = () => {
   return (
