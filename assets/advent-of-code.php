@@ -25,7 +25,11 @@
             <li><a href="#get-ready">Prepare-se</a></li>
             <li><a href="#">|</a></li>
             <li><a href="#meet-zbra">Conheça a ZBRA</a></li>
-            <li><a href="#meetzbra" class="green-button"><strong>FAÇA PARTE</strong></a></li>
+            <li>
+              <button class="green-button">
+                <a onclick="handleClick()" href="#meet-zbra" class="green-button"><strong>FAÇA PARTE</strong></a>
+              </button>
+            </li>
           </ul>
         </div>
 
@@ -47,7 +51,11 @@
             <li><a onclick="handleClick()" href="#join-with-zbra">Participe com a ZBRA</a></li>
             <li><a onclick="handleClick()" href="#get-ready">Prepare-se</a></li>
             <li><a onclick="handleClick()" href="#meet-zbra">Conheça a ZBRA</a></li>
-            <li><a onclick="handleClick()" href="#meetzbra" class="green-button"><strong>FAÇA PARTE</strong></a></li>
+            <li>
+              <button class="green-button">
+                <a onclick="handleClick()" href="#meet-zbra" class="green-button"><strong>FAÇA PARTE</strong></a>
+              </button>
+            </li>
           </ul>
           <div class='social-media'>
             <a href='https://br.linkedin.com/company/zbra-dev'>
@@ -176,10 +184,10 @@
           Para entrar basta entrar no site do Advent of Code, clicar em Leaderboars, depois
           em Private Leaderboard e usar o código abaixo:
         </p>
-
-        <input type="text" id="code-leaderboard" value="1555177-3238d417" />
-        <input type="submit" value="Copiar 🖇️" onclick="copyText()" />
-
+        <div class="leaderboard-code-box">
+          <input type="text" id="code-leaderboard" value="1555177-3238d417" />
+          <input type="submit" value="Copiar 🖇️" onclick="copyText()" />
+        </div>
         <p>
           Siga também a ZBRA nas redes sociais e acompanhe as postagens sobre o Advent of Code e muito mais.
         </p>

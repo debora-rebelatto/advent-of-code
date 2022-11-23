@@ -82,15 +82,25 @@ li > a:visited {
 .green-button {
   background-color: #00ffa1;
   color: #173873;
-  padding: 10px 20px;
+  padding: 15px 20px 10px 20px;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: lighter;
 }
 
 .green-button a {
   font-size: 1rem;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1260px) {
+  .green-button {
+    padding: 40px 50px 30px 50px;
+  }
+
+  .green-button a {
+    font-size: 3rem;
+  }
 }
 
 .green-button a:visited {
@@ -146,6 +156,7 @@ li > a:visited {
   text-align: center;
   vertical-align: middle;
   line-height: 1;
+  font-weight: normal;
 }
 
 #aoc_header p {
@@ -164,7 +175,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 2rem;
 }
 
 #hamburger {
@@ -173,9 +184,10 @@ nav {
 
 .bar {
   display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
+  width: 60px;
+  height: 9px;
+  border-radius: 10px;
+  margin: 10px auto;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: white;
@@ -199,14 +211,12 @@ nav {
 }
 
 .mobile-menu ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
   padding: 50px;
+  justify-items: start;
 }
 
 .mobile-menu li {
-  height: 10px;
   margin: 16px 0;
   font-size: 40px;
   margin: 35px;
@@ -233,7 +243,7 @@ nav {
   left: 0;
   right: 0;
   content: '\d7';
-  font-size: 50px;
+  font-size: 100px;
   color: rgb(255, 255, 255);
   line-height: 100px;
   text-align: center;
@@ -302,25 +312,48 @@ nav {
   background-image: url(../images/ZBRABackgound.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 input {
   background-color: #a164ff;
   color: white;
   border: none;
-  border-radius: 5px;
   font-size: 1.5rem;
 }
 
-input[type="text"] {
-  width: 350px;
-  padding: 15px;
-  border-radius: 5px;
+.leaderboard-code-box{
+  background-color: #a164ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px;
 }
 
-input[type="submit"] {
-  width: 100px;
-  margin-left: -150px;
+.leaderboard-code-box input {
+  background-color: #a164ff;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.leaderboard-code-box input[type="text"] {
+  width: 250px;
+}
+
+@media only screen and (max-width: 1260px) {
+  .leaderboard-code-box{
+    padding: 40px;
+  }
+
+  .leaderboard-code-box input {
+    font-size: 3rem;
+  }
+
+  .leaderboard-code-box input[type="text"] {
+    width: 450px;
+  }
 }
 
 #get-ready {
@@ -373,6 +406,10 @@ footer {
   background-color: #173873;
   color: white;
   padding: 30px;
+}
+
+footer > p {
+  font-size: 1.5rem;
 }
 
 /* media query footer */
