@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://zbra.dev/wp-content/themes/zbra/assets/css/styles_AoC.css">
     <link rel="stylesheet" href="https://use.typekit.net/wyk8hzs.css">
     <title>ZBRA - Advent of Code</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJB9V9XG5Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+      gtag('config', 'G-ZJB9V9XG5Y');
+    </script>
+
+    <link href="<?php the_field('icone_favicon',460); ?>" rel="shortcut icon" type="image/x-icon">
+    <link href="<?php the_field('icone_favicon',460); ?>" rel="apple-touch-icon">
 </head>
 <body>
   <div>
